@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:morse_translation/screens/esp_a_morse.dart';
+
+import 'screens/esp_a_morse.dart';
+
 
 void main() {
   runApp(const MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -11,13 +14,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Proyecto Lenguajes y Automatas 2',
       theme: ThemeData(
         
         primarySwatch: Colors.lightGreen,
       ),
-      home: const espAMorse(),
+      home: const EspaMorse(),
     );
   }
 }
